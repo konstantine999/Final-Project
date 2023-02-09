@@ -7,6 +7,9 @@ body {
     overflow-x: hidden;
     background-color: #F2F2F2;
 }
+html {
+    scroll-behavior: smooth;
+}
 .flex {
     display: flex;
 }
@@ -107,6 +110,10 @@ header ul {
     width: 127px;
     height: 186px;
     margin-top: 170px;
+    cursor: pointer;
+}
+.browse-more-wrpaper a {
+    width: 100%;
 }
 .browse-more-wrpaper img {
     width: 100%;
@@ -114,6 +121,10 @@ header ul {
     object-fit: contain;
 }
 @media (max-width: 1024px) {
+
+    .shadow {
+        background: radial-gradient(circle,  rgba(34,34,34,0.5) 20%, rgb(75, 75, 75) 86%);
+    }
     .burger-icon {
         display: block;
     }
