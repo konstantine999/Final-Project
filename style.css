@@ -248,27 +248,67 @@ header ul {
     justify-content: center;
     align-items: center;
 }
-.my-work h3{
-    max-width: 500px;
+.my-work-item {
+    justify-content: center;
+    align-items: center;
 }
-.work-photos-wrapper div {
-    max-width: 722px;
-    min-height: 1049px;
+.my-work h3 {
+    max-width: 500px;
 }
 .work-photos-wrapper div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.work-photos-item {
+.work-photos-wrapper {
+    box-shadow: 0px 80px 160px rgba(15, 15, 15, 0.16);
+
+}
+.work-photos-item1, .work-photos-item2 {
+    max-width: 722px;
+    min-height: 1049px;
+    position: relative;
+}
+.work-photos-item2 {
     margin-left: 30px;
     margin-right: -300px;
-    position: relative;
 }
 .text-over-photo {
     position: absolute;
     margin-top: -200px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.text-over-photo h4 {
+    font-size: 50px;
+    font-family: 'Playfair Display';
+    color: #FFFFFF;
+    letter-spacing: -1px;
+}
+.text-over-photo p {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.text-over-photo p span {
     margin-left: 40px;
+}
+.hidden-line {
+    display: none;
+}
+.line {
+    width: 25px;
+    height: 6px;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+}
+.hidden-line {
+    width: 25px;
+    height: 6px;
+    background-color: #FFFFFF;
+    margin-top: 20px;
 }
 @media (max-width: 1024px) {
     .shadow {
@@ -342,5 +382,59 @@ header ul {
     }
     .story-text-wrapper {
         max-width: 338px;
+    }
+    /* Home Page Work Secgtion */
+    .my-work {
+        margin-top: 0px;
+        justify-content: unset;
+        align-items: normal;
+    }
+    .my-work-item {
+        margin: 0 auto;
+        align-items: normal;
+        justify-content: unset;
+        flex-direction: column;
+        max-width: 338px;
+    }
+    .work-photos-item1, .work-photos-item2 {
+        max-width: 338px;
+        min-height: 396px;
+    }
+    .work-photos-item2 {
+        display: none;
+    }
+    .work-text-wrapper h4 {
+        font-size: 16px;
+    }
+    .work-text-wrapper h3 {
+        font-size: 36px;
+        max-width: 300px;
+        letter-spacing: -1.8px;
+        line-height: 46px;
+    }
+    .work-text-wrapper {
+        margin-top: 70px;
+    }
+    .my-work button {
+        margin-top: 30px;
+    }
+    .work-photos-wrapper {
+        margin-top: 47px;
+    }
+    .work-photos-wrapper h4{
+        font-size: 30px;
+    }
+    .work-photos-wrapper p{
+        font-size: 9px;
+        margin-top: 5px;
+    }
+    .work-photos-wrapper .line {
+        display: none;
+        margin-top: 0px;
+        height: 2px;
+        width: 15px;
+    }
+    .work-photos-wrapper .hidden-line {
+        display: block;
     }
 }
