@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid {
+    max-width: 2480px;
+    margin: 0 auto;
+}
+.contact-instagram {
+    position: relative;
+}
+.contact-wrapper {
+    background-color: #D69991;
+    height: 1124px;
+}
+.instagram-wrapper {
+    margin-top: -523px;
+}
+.block {
+    max-width: 523px;
+}
+.block img {
+    width: 100%;
+}
+.instagram-wrapper-item {
+    display: flex;
+}
+.down {
+    margin-top: 40px;
+}
