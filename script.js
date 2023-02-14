@@ -9,3 +9,12 @@ closer.addEventListener('click', () => {
     mobile.classList.toggle('show')
     mobile.classList.toggle('hide')
 })
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

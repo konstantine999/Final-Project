@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -115,7 +117,7 @@
             </div>
         </section>
         <section>
-            <div class="my-work flex">
+            <div class="my-work">
                 <div class="my-work-item flex">
                     <div class="work-text-wrapper">
                         <h4>
@@ -130,52 +132,86 @@
                             </button>
                         </a>
                     </div>
-                    <div class="work-photo-top-wrapper flex">
-                        <div class="work-photos-wrapper flex">
-                            <div class="work-photos-item1">
-                                <img src="./photos/wedding-photo1.jpg" alt="Maya Harvey">
-                                <div class="text-over-photo flex">
-                                    <h4>
-                                        Maya & Harvey
-                                    </h4>
-                                    <div class="line hidden-line">
-
-                                    </div>
-                                    <p>
-                                        married <span>sep 2019</span>
-                                    </p>
-                                    <div class="line">
-
-                                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./photos/wedding-photo1.jpg" alt="">
+                            <div class="text-over-photo flex">
+                                <h4>
+                                    Maya & Harvey
+                                </h4>
+                                <div class="line hidden-line">
+                            
+                                </div>
+                                <p>
+                                    married <span>sep 2019</span>
+                                </p>
+                                <div class="line">
+                            
                                 </div>
                             </div>
                         </div>
-                        <div class="work-photos-wrapper flex">
-                            <div class="work-photos-item2">
-                                <img src="./photos/wedding-photo2.jpg" alt="Maya Harvey">
-                                <div class="text-over-photo flex">
-                                    <h4>
-                                        Bryana & Steve
-                                    </h4>
-                                    <div class="line hidden-line">
-
-                                    </div>
-                                    <p>
-                                        married <span>sep 2019</span>
-                                    </p>
-                                    <div class="line">
-
-                                    </div>
+                          <div class="swiper-slide">
+                            <img src="./photos/wedding-photo2.jpg" alt="">
+                            <div class="text-over-photo flex">
+                                <h4>
+                                    Maya & Harvey
+                                </h4>
+                                <div class="line hidden-line">
+                            
+                                </div>
+                                <p>
+                                    married <span>sep 2019</span>
+                                </p>
+                                <div class="line">
+                            
                                 </div>
                             </div>
                         </div>
+                          <div class="swiper-slide">
+                            <img src="./photos/wedding-photo1.jpg" alt="">
+                            <div class="text-over-photo flex">
+                                <h4>
+                                    Maya & Harvey
+                                </h4>
+                                <div class="line hidden-line">
+                            
+                                </div>
+                                <p>
+                                    married <span>sep 2019</span>
+                                </p>
+                                <div class="line">
+                            
+                                </div>
+                            </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <img src="./photos/wedding-photo1.jpg" alt="">
+                            <div class="text-over-photo flex">
+                                <h4>
+                                    Maya & Harvey
+                                </h4>
+                                <div class="line hidden-line">
+                            
+                                </div>
+                                <p>
+                                    married <span>sep 2019</span>
+                                </p>
+                                <div class="line">
+                            
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js">
-
+        
     </script>
 </body>
 </html>
