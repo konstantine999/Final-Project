@@ -145,7 +145,7 @@ header ul {
 /* Landing Page Middle content */
 .middle-content {
     align-items: center;
-    margin-top: 170px;
+    margin-top: 15vh;
     flex-direction: column;
 }
 .banner .middle-content h2 {
@@ -226,8 +226,13 @@ a {
     min-height: 1003px;
     margin-left: -100px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+.my-story-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .my-story h4, .work-text-wrapper h4 {
     font-size: 26px;
@@ -267,6 +272,9 @@ a {
     justify-content: center;
     align-items: center;
 }
+.work-text-wrapper {
+    margin-left: 15px;
+}
 .my-work h3 {
     max-width: 500px;
 }
@@ -290,6 +298,9 @@ a {
 
 .swiper-slide:nth-child(3n) {
     width: 40%;
+}
+.swiper-pagination-bullet {
+    background-color: white;
 }
 .work-photos-wrapper div img {
     width: 100%;
@@ -341,10 +352,10 @@ a {
     margin-top: 20px;
 }
 .hidden-line {
-    width: 17px;
-    height: 5px;
+    width: 10px;
+    height: 2.5px;
     background-color: #FFFFFF;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 /* Work Page */
@@ -407,6 +418,61 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*About Page Location Section  */
+.new-york-wrapper {
+    max-width: 1400px;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 190px;
+}
+.new-york-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.location-text-wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 450px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 4;
+    margin-top: -350px;
+    flex-direction: column;
+    align-items: center;
+}
+.location-icon-wrapper {
+    max-width: 170px;
+    height: 169px;
+    margin-top: 75px;
+}
+.location-icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.location-text-wrapper h3 {
+    font-family: 'Playfair Display';
+    font-size: 50px;
+    color: #222222;
+    letter-spacing: -1.8px;
+    margin-top: 28px;
+}
+.location-text-wrapper p {
+    font-family: 'Montserrat';
+    color: #888888;
+    letter-spacing: 0.7px;
+    line-height: 48px;
+    max-width: 1200px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.location-text-item {
+    flex-direction: column;
+    align-items: center;
 }
 @media (max-width: 1024px) {
     .shadow {
@@ -483,10 +549,11 @@ a {
     .my-story {
         margin-left: 0px;
     }
-    .story-text-wrapper {
+    .my-story-item {
         width: 90%;
         margin: 0 auto;
     }
+
 
     /* Home Page Work Secgtion */
     .my-work {
@@ -515,6 +582,7 @@ a {
     }
     .work-text-wrapper {
         margin-top: 70px;
+        margin-left: 0px;
     }
     .my-work button {
         margin-top: 30px;
@@ -546,6 +614,7 @@ a {
     }
     .text-over-photo p {
         font-size: 9px;
+        margin-top: 10px;
     }
     .swiper {
         height: 500px;
@@ -576,8 +645,46 @@ a {
         height: 4px;
         width: 24px;
     }
+    .briliant-text-over-photo {
+        margin-top: -150px;
+    }
+    .briliant-measure {
+        height: 263px;
+    }
     .albums-wrapper {
-        display: block;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+        width: 90%;
+        margin: 0 auto;
         margin-top: 95px;
+        gap: 20px;
+    }
+    .text-over-photo p span {
+        margin-left: 15px;
+    }
+
+    /* About Page Location Section */
+    .new-york-wrapper {
+        height: 300px;
+        margin-top: 0px;
+    }
+    .location-text-wrapper {
+        min-height: 324px;
+        margin-top: 0px;
+    }
+    .location-icon-wrapper {
+        width: 102px;
+        height: 104px;
+        margin-top: 30px;
+    }
+    .location-text-wrapper h3{
+        font-size: 30px;
+    }
+    .location-text-wrapper p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .location-text-item {
+        width: 90%;
     }
 }
