@@ -1040,6 +1040,9 @@ input::placeholder {
     }
 
     /*News Page  */
+    .news-wrapper {
+        margin-top: 0px;
+    }
     .news-photo-wrapper {
         height: 243px;
     }
