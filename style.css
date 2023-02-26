@@ -37,8 +37,8 @@ html {
     display: none;
     width: 28px;
     height: 16px;
+    cursor: pointer;
 }
-
 .burger-icon div {
     background-color: #DADADA;
     width: 24px;
@@ -599,8 +599,7 @@ input::placeholder {
 }
 .contact-button {
     background-color: #D69991;
-    height: 60px;
-    width: 240px;
+    padding: 20px 30px;
     border: none;
     font-size: 22px;
     color: #FFFFFF;
@@ -624,13 +623,11 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
 }
-
 /*Footer */
 .footer-wrapper {
     width: 100%;
     margin-top: 220px;
     background-color: #222222;
-    justify-content: space-evenly;
 }
 .footer-wrapper ul {
     list-style: none;
@@ -639,13 +636,16 @@ input::placeholder {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 38px;
+    font-family: 'Playfair Display';
 }
 .footer-social-wrapper p {
     color: #FFFFFF;
     font-size: 38px;
+    font-family: 'Playfair Display';
 }
 .footer-icons-wrapper {
     margin-top: 10px;
+    gap: 5px;
 }
 .copyright-wrapper {
     margin-top: 18px;
@@ -653,14 +653,20 @@ input::placeholder {
 .copyright-wrapper span {
     font-size: 18px;
     color: #888888;
+    font-family: 'Montserrat';
     display: block;
 }
-.footer-icons-wrapper {
-    gap: 5px;
+.royal-store {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .footer-icon-item {
-    width: 37px;
+    max-width: 37px;
     height: 38px;
+}
+.footer-icon-item a {
+    width: 100%;
+    height: 100%;
 }
 .footer-icon-item img {
     width: 100%;
@@ -668,12 +674,45 @@ input::placeholder {
     object-fit: contain;
 }
 .nav-social {
-    gap: calc(100% - 150px);
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 70px;
+    justify-content: space-around;
+}
+.footer-input-wrapper input{
+    width: 100%;
+    height: 70px;
+    background: rgba(238, 238, 238, 0.15);
+    border: none;
+    margin-top: 30px;
 }
 .footer-line {
-    width: 100%;
-    background-color: blue;
-    height: 4px;
+    width: 80%;
+    height: 2px;
+    background-color: #333333;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.footer-photographer-name {
+    text-align: center;
+    font-family: 'Zapfino';
+    color: #666666;
+    font-size: 28px;
+    line-height: 120px;
+    letter-spacing: -1.1px;
+}
+.subscribe p {
+    font-size: 38px;
+    font-family: 'Playfair Display';
+    color: #FFFFFF;
+    letter-spacing: -0.6px;
+}
+.subscribe span {
+    font-size: 18px;
+    color: #888888;
+    font-family: 'Montserrat';
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 /* News Page */
 .container-small {
@@ -1033,10 +1072,14 @@ input::placeholder {
         padding-left: 27px;
     }
     .contact-button {
-        width: 188px;
-        height: 50px;
+        padding: 15px 20px;
         font-size: 12px;
         margin-top: 37px;
+    }
+    .contact-button::after {
+        width: 14px;
+        height: 16px;
+        background-size: 14px 16px;
     }
 
     /*News Page  */
@@ -1067,5 +1110,51 @@ input::placeholder {
     }
     .news-item-bottom {
         display: none;
+    }
+
+    /* Footer */
+    .footer-wrapper {
+        margin-top: 53px;
+    }
+    .nav-social {
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+    .nav-social ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-social li a {
+        font-size: 26px;
+    }
+    .footer-social-wrapper p {
+        font-size: 26px;
+    }
+    .footer-social-wrapper span {
+        font-size: 15px;
+    }
+    .footer-photographer-name {
+        font-size: 22px;
+    }
+    .royal-store {
+        display: block;
+    }
+    .subscribe {
+        margin-top: 60px;
+    }
+    .subscribe p {
+        font-size: 26px;
+    }
+    .subscribe span {
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 1px;
+    }
+    .footer-line {
+        margin-top: 46px;
+    }
+    .footer-input-wrapper input {
+        height: 40px;
     }
 }
