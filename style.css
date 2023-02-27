@@ -143,6 +143,9 @@ header ul {
 .header-right-side {
     align-items: center;
 }
+.unordered-list {
+    align-items: center;
+}
 
 /* Landing Page Middle content */
 .middle-content {
