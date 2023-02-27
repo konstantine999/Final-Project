@@ -423,7 +423,9 @@ a {
     height: 100%;
     object-fit: cover;
 }
-
+.button {
+    width: 70%;
+}
 /*About Page Location Section  */
 .new-york-wrapper {
     max-width: 1400px;
@@ -618,6 +620,10 @@ input::placeholder {
     height: 20px;
     content: "";
 }
+.more-button:hover, .contact-button:hover {
+    opacity: 0.9;
+    box-shadow: 0px 30px 80px rgba(15, 15, 15, 0.15);
+}
 .form-wrapper form {
     display: flex;
     flex-direction: column;
@@ -765,6 +771,83 @@ input::placeholder {
 }
 .news-item-middle, .news-item-bottom {
     margin-top: 120px;
+}
+
+/* Footer */
+.contact-instagram {
+    position: relative;
+}
+.footer-contact {
+    background-color: #EFE9E8;
+    min-height: 1124px;
+    margin-top: 130px;
+}
+.footer-contact-item {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+.footer-contact-item h3 {
+    max-width: 700px;
+    line-height: 80px;
+    letter-spacing: -2.2px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Playfair Display';
+}
+.footer-contact-item p {
+    font-size: 22px;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #888888;
+    margin-top: 15px;
+    max-width: 800px;
+}
+.mail-icon-wrapper {
+    max-width: 204px;
+    height: 203px;
+}
+.mail-icon-wrapper img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.big-footer {
+    margin-top: 0px;
+}
+.footer-follow {
+    position: absolute;
+    left: 43%;
+    top: 38%;
+    background-color: #FFFFFF; 
+    width: 14%; 
+    min-height: 50px; 
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.15);
+}
+.footer-follow h3{
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 30px;
+}
+.block {
+    max-width: 523px;
+}
+.block img {
+    width: 100%;
+}
+.instagram-wrapper-item {
+    display: flex;
+    position: relative;
+}
+.down {
+    margin-top: -40px;
+}
+.footer-up {
+    margin-top: -45px;
 }
 @media (max-width: 1024px) {
     .shadow {
@@ -1052,6 +1135,9 @@ input::placeholder {
     .top-inputs-wrapper input {
         width: 100%;
     }
+    .button {
+        max-width: 170px;
+    }
     .email-input-wrapper {
         width: 100%;
         margin-top: 16px;
@@ -1156,5 +1242,43 @@ input::placeholder {
     }
     .footer-input-wrapper input {
         height: 40px;
+    }
+
+    /* Footer + Contacts + instagram */
+    .hidden-block {
+        display: none;
+    }
+    .footer-follow {
+        top: 25%;
+        width: 50%;
+        left: 25%;
+    }
+    .footer-contact {
+        min-height: 518px;
+        margin-top: 56px;
+    }
+    .footer-contact-item {
+        padding-top: 46px;
+    }
+    .footer-contact-item h3 {
+        font-size: 36px;
+        line-height: 50px;
+        letter-spacing: -1.8px;
+    }
+    .mail-icon-wrapper {
+        max-width: 104px;
+        height: 103px;
+    }
+    .footer-follow h3{
+        font-size: 17px;
+    }
+    .footer-contact-item p {
+        margin-top: 0px;
+    }
+    .big-footer {
+        margin-top: 0px;
+    }
+    .footer-hiden {
+        display: none;
     }
 }
